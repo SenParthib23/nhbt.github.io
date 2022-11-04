@@ -190,17 +190,12 @@ section img#man{
     /* background: #1c0522; */
     background: rgb(89 61 20);
     /* background-image: url("img/bio34.png"); */
-    background-image: conic-gradient(#c0e98f, #0de93b, #2a483e);
+    /* background-image: conic-gradient(#5f7b3c, #d4fc79, #96e6a1); */
+    background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
     opacity: 95%;
     /* background-size: 1920px 1080px; */
 
 }
-/* .blur {
-    background: rgba(255, 255, 255, 0.2); 
-    backdrop-filter: blur(8px); 
-    height: 100vh;
-    width: 100%;
-  } */
 .sec h2{
     font-size: 3.5em;
     margin-bottom: 10px;
@@ -218,7 +213,8 @@ section img#man{
     height: 100vh;
     background: linear-gradient(45deg, #00ff90, #184505);
     /* background-image: url("img/slide4.jpg"); */
-    /* background-image: conic-gradient(#cd1a1a, #e5cc1b, #950f0f); */
+    /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
+    background-image: linear-gradient(to top, #d1fdff 0%, #fddb92 100%);
     /* background-size: 1920px 1080px; */
     display: flex;
     align-items: center;
@@ -244,7 +240,8 @@ section img#man{
 } */
 
 .event-container{
-    background-image: url("img/glowing-2245832.jpg");
+    /* background-image: url("img/glowing-2245832.jpg"); */
+    background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
     display: flex;
     justify-content: center;
     align-items: center;
