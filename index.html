@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>NHBT</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#contain">Work</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        </nav>
+    </header>
+    <section class="banner">
+        <!-- <img src="img/stars.png" alt="" id="stars">
+        <img src="img/moon.png" alt="" id="moon">
+        <img src="img/mountains_behind.png" alt="" id="mountains_behind">
+        <img src="img/mountains_front.png" alt="" id="mountains_front"> -->
+        <!-- <img src="img2/Hills.png" alt="" id="Hills">
+        <img src="img2/TreeBack.png" id="TreeBack" class="buttom-left">
+        <img src="img2/TreeFront.png" alt="" id="TreeFront" class="buttom-right"> -->
+        <!-- <video loop autoplay muted plays-inline class="back-video">
+            <source src="images/Hilll2.mp4" type="video/mp4">
+        </video> -->
+        <img src="img/Hills2.png" alt="" id="hills">
+        <img src="img/Man2.png" alt="" id="man">
+        <h2 id="text">New Horizons in Biotechnology</h2>
+        <a href="#sec" id="btn">Explore</a>
+    </section>
+    <!-- <div class="bg-image"></div> -->
+    <div class="sec" id="sec">
+        <h2>What are new horizons in Biotechnology ?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est non voluptate voluptas dicta impedit totam nihil animi laborum recusandae ullam a, cupiditate minima necessitatibus doloribus id aliquid quis culpa beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam perferendis ullam unde repellendus necessitatibus beatae itaque odio, quae eveniet, libero dolor consectetur ad qui amet ab. <br><br>Eligendi consectetur expedita qui magni fugit sunt, voluptates esse rem quidem necessitatibus. Neque quo quaerat iusto expedita et amet esse commodi quod molestias fugiat Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis enim ab porro optio et incidunt ut sed eaque, cumque illum nostrum sit vitae, totam illo debitis tenetur error! Ad, quia. <br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, doloremque vero vel accusamus laborum nobis sequi, vitae iusto distinctio sapiente at nostrum officiis voluptatibus consectetur. <br><br>Eveniet velit reprehenderit corporis dolores ducimus nisi praesentium enim laborum rerum fugit sed voluptatibus aspernatur, veritatis totam officia saepe voluptate! Delectus dolorum iure reprehenderit architecto odio aut, nostrum culpa illum, alias placeat sint quia, voluptates harum molestiae aspernatur laborum excepturi velit recusandae nam ratione! Blanditiis ut illo vero quia temporibus nobis quam maiores pariatur natus!<br><br></p>
+    </div>
+    <div class="container" id="contain">
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="img/slide1.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/slide2.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/slide3.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/slide4.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/slide5.jpg" alt=""></div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+  
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+  
+      <!-- If we need scrollbar -->
+      <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+      </div>
+
+      <div class="event-container">
+        <div class="news">
+            <span>News and Updates</span>
+        </div>
+        <div class="events">
+            <span>Announcements !!</span>
+        </div>
+      </div>
+      <script src="script.js"></script>
+      <!-- <script src="data2.js"></script> -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+      <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        autoplay: {
+            delay: 4000,
+            dislableOnInteraction: false,
+            loop: true,
+        },
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        });
+    </script>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var nav = document.querySelector("nav");
+            nav.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</body>
+</html>
