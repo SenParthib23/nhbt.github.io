@@ -32,16 +32,16 @@ body{
 }
 .navbar.sticky{
     padding: 5px 100px;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 15px #000000;
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a{
-    color: #5d3719;
+    color: #ffffff;
 }
 .navbar.sticky ul li a{
-    color: #5d3719;
+    color: #ffffff;
 }
 .navbar .content{
     display: flex;
@@ -115,7 +115,7 @@ body{
         padding: 40px 0;
         text-align: center;
         color: white;
-        background: rgba(255, 255, 255, 0.6);
+        background: rgba(0, 0, 0, 0.6);
         box-shadow: 0 8px 15px #000000;
         backdrop-filter: blur(10px);
         transition: all 0.3s ease;
