@@ -8,14 +8,12 @@
     scroll-behavior: smooth;
 }
 html {
-    /* font-size: 62.5%; */
     /* 1rem = 10px */
     overflow-x: hidden;
   }
   
 body{
     min-height: 100vh;
-    /* background: linear-gradient(#2b1055, #7597de); */
     background: linear-gradient(rgb(89 61 20)rgb(236, 234, 108));
     overflow: hidden;
 }
@@ -233,18 +231,7 @@ section img{
     object-fit: cover;
     pointer-events: none;
 }
-section img#moon{
-    mix-blend-mode: screen;
-}
-/* section img#mountains_front{
-    z-index: 10;
-} */
-section img#TreeFront{
-    z-index: 10;
-}
-/* section img#TreeBack{
-    z-index: 10;
-} */
+
 section img#man{
     top: 0;
     left: 0;
