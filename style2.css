@@ -7,14 +7,129 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
+html {
+    /* font-size: 62.5%; */
+    /* 1rem = 10px */
+    overflow-x: hidden;
+  }
+  
 body{
     min-height: 100vh;
     /* background: linear-gradient(#2b1055, #7597de); */
     background: linear-gradient(rgb(89 61 20)rgb(236, 234, 108));
-    overflow-x: hidden;
+    overflow: hidden;
 }
-nav{
-    /* position: absolute; */
+
+.content{
+    max-width: 1250px;
+    margin: auto;
+    padding: 0px 10px;
+}
+.navbar{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    padding: 25px 0;
+    transition: all 0.5s ease;
+}
+.navbar.sticky{
+    padding: 5px 200px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 15px #000000;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a{
+    color: #000000;
+}
+.navbar.sticky ul li a{
+    color: #000000;
+}
+.navbar .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 1000;
+    text-decoration: none;
+}
+.navbar .menu-list{
+    display: inline-flex;
+}
+.menu-list li{
+    list-style: none;
+}
+.menu-list li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+    margin-left: 35px;
+    /* padding: 20px; */
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+/* .menu-list li a:hover{
+    background: #fff;
+    color: #2b1055;
+    padding: 5px 10px;
+    border-radius: 30px;
+    transition: 0.3s;
+    color: cyan;
+} */
+
+.navbar ul li a:hover{
+    color: rgb(255, 189, 21);
+    transition: 0.3s;
+}
+.icon{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+.icon.cancel-btn{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+@media (max-width: 868px){
+    body.disabledScroll{
+        overflow: hidden;
+    }
+    .icon{
+        display: block;
+    }
+    .icon.hide{
+        display: none;
+    }
+    .navbar .menu-list{
+        /* display: none; */
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        background: #222;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu-list.active{
+        left: 0%;
+    }
+    .navbar .menu-list li{
+        margin-top: 45px;
+    }
+    .navbar .menu-list li a{
+        font-size: 23px;
+    }
+}
+/* nav{
     position: fixed;
     top: 0;
     left: 0;
@@ -34,7 +149,6 @@ nav .logo{
     font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 2px;
-    /* transition: 0.6s; */
 }
 nav ul{
     position: relative;
@@ -53,12 +167,9 @@ nav ul li a{
     padding: 6px 15px;
     color: #ffff;
     font-weight: bolder;
-    /* transition: 0.6s; */
 }
 nav.sticky{
-    padding: 5px 100px;
     background: rgba(255, 255, 255, 0.6);
-    /* background: #fff; */
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 15px #000000;
 
@@ -70,6 +181,22 @@ nav ul li a:active{
     border-radius: 30px;
     transition: 0.3s;
 }
+
+.mobile-nav-icon{
+    width: 5rem;
+    height: 4rem;
+}
+
+.mobile-navbar-btn{
+    display: none;
+    background: transparent;
+    cursor: pointer;
+}
+.mobile-nav-icon[name="close-outline"]{
+    display: none;
+} */
+
+/* working on the responsive part */
 
 section{
     position: relative;
@@ -83,10 +210,10 @@ section{
     overflow: hidden;
 }
 
-nav.sticky .logo,
+/* nav.sticky .logo,
 nav.sticky ul li a{
     color: #000000;
-}
+} */
 section::before{
     content: '';
     position: absolute;

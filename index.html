@@ -7,19 +7,42 @@
     <link rel="stylesheet" href="style2.css">
     <title>NHBT</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/59535943e2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <nav>
+    <!-- <header class="header">
+        <nav class="navbar">
         <a href="#" class="logo">Logo</a>
-        <ul>
+        <ul class="navbar-list">
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#contain">Work</a></li>
             <li><a href="#">Contact Us</a></li>
         </ul>
         </nav>
-    </header>
+        <div class="mobile-navbar-btn">
+            <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+            <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+        </div>
+    </header> -->
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo"><a href="#">LOGO</a></div>
+            <ul class="menu-list">
+            <div class="icon cancel-btn">
+                <i class="fas fa-times"></i>
+            </div>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#contain">Work</a></li>
+                <li><a href="https://www.instagram.com/its_too_me/" target="_blank">Contact Us</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
     <section class="banner">
         <!-- <img src="img/stars.png" alt="" id="stars">
         <img src="img/moon.png" alt="" id="moon">
@@ -110,5 +133,32 @@
             nav.classList.toggle("sticky", window.scrollY > 0);
         })
     </script>
+    
+    <!-- JS code for the nav icons -->
+    <script>
+      const body = document.querySelector(".body");
+      const navbar = document.querySelector(".navbar");
+      const menu = document.querySelector(".menu-list");
+      const menuBtn = document.querySelector(".menu-btn");
+      const cancelBtn= document.querySelector(".cancel-btn");
+      menuBtn.onclick = ()=>{
+        menu.classList.add("active");
+        menuBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+        body.classList.add("disabledScroll");
+      }
+      cancelBtn.onclick = ()=>{
+        menu.classList.remove("active");
+        menuBtn.classList.remove("hide");
+        cancelBtn.classList.remove("show");
+        body.classList.remove("disabledScroll");
+      }
+
+      windwo.onscroll = ()=>{
+        this.scrollY > 20 ? navbar.classlist.add("sticky"):navbar.classlist.remove("sticky"); 
+      }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
