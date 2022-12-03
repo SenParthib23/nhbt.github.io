@@ -4,194 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css">
-    <title>NHBT</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <script src="https://kit.fontawesome.com/59535943e2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>nhbt</title>
 </head>
 <body>
-    <!-- <header class="header">
-        <nav class="navbar">
-        <a href="#" class="logo">Logo</a>
-        <ul class="navbar-list">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#contain">Work</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
-        </nav>
-        <div class="mobile-navbar-btn">
-            <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
-            <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
-        </div>
-    </header> -->
-    <nav class="navbar">
+    <!-- ---Header--- -->
+    <header>
+        <a href="#" class="logo">NHBT</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navbar">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Work</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div> 
+    </header>
+    <!-- ---Home Section--- -->
+            <!-- <video autoplay loop muted plays-inline>
+                <source src="img/Travel Deep Inside a Leaf - Annotated Version  California Academy of Sciences.mp4">
+            </video> -->
+    <section class="home">
+        <video class="bg-video" src="img/bgVideo2.mp4" autoplay muted loop>
+
+        </video>
         <div class="content">
-            <div class="logo"><a href="#">Logo</a></div>
-            <ul class="menu-list">
-            <div class="icon cancel-btn">
-                <i class="fas fa-times"></i>
-            </div>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#contain">Work</a></li>
-                <li><a href="https://www.instagram.com/its_too_me/" target="_blank">Contact Us</a></li>
-            </ul>
-            <div class="icon menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
+            <h1>New Horizons <br><span>in Biotechnology</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur exercitationem illum, sint quo aut maiores ipsam
+            libero assumenda quasi officiis, laudantium necessitatibus placeat 
+            iste repellendus quas veritatis ducimus temporibus quisquam!</p>
+            <a href="#">Explore</a>
         </div>
-    </nav>
-    <section class="banner">
-        <img src="img/Hills2.png" alt="" id="hills">
-        <img src="img/Man2.png" alt="" id="man">
-        <h2 id="text">New Horizons in Biotechnology</h2>
-        <a href="#sec" id="btn">Explore</a>
-    </section>
-    <!-- <div class="bg-image"></div> -->
-    <div class="sec" id="sec">
-        <h2>What are new horizons in Biotechnology ?</h2>
-        <div class="card-container">
-            <div class="card" id="card1">
-                <!-- <h1 class="center">01</h1> -->
-                <h2 class="center">Vision</h2>
-                <div class="content">
-                    <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi rem libero nulla nihil totam, vitae temporibus facere architecto delectus.</p>
-                </div>
-            </div>
-            <div class="card" id="card2">
-                <!-- <h1 class="center">02</h1> -->
-                <h2 class="center">Mission</h2>
-                <div class="content">
-                    <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi rem libero nulla nihil totam, vitae temporibus facere architecto delectus.</p>
-                </div>
-            </div>
-            <div class="card" id="card3">
-                <!-- <h1 class="center">03</h1> -->
-                <h2 class="center">History</h2>
-                <div class="content">
-                    <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi rem libero nulla nihil totam, vitae temporibus facere architecto delectus.</p>
-                </div>
-            </div>
+        <div class="media-icons">
+            <a href="https://www.facebook.com/parthib.sen.58" type="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/its_too_me/" type="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
         </div>
-        </div>
-    
-    <div class="container" id="contain">
-        <!-- Slider main container -->
-    <div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide"><img src="img/slide1.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="img/slide2.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="img/slide3.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="img/slide4.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="img/slide5.jpg" alt=""></div>
-    </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-  
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-  
-      <!-- If we need scrollbar -->
-      <!-- <div class="swiper-scrollbar"></div> -->
-      </div>
-      </div>
-
-      <div class="event-container">
-        <div class="news">
-            <span>News and Updates</span>
-        </div>
-        <div class="events">
-            <span>Announcements !!</span>
-        </div>
-      </div>
-      <script src="script.js"></script>
-      <!-- <script src="data2.js"></script> -->
-      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-      <script>
-        const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        autoplay: {
-            delay: 4000,
-            dislableOnInteraction: false,
-            loop: true,
-        },
-        loop: true,
-
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
-        });
-    </script>
+    </section> 
+    <!-- Javascript for responsive navigation menu  -->
     <script type="text/javascript">
-        window.addEventListener("scroll", function(){
-            var nav = document.querySelector("nav");
-            nav.classList.toggle("sticky", window.scrollY > 0);
-        })
-    </script>
-    
-    <!-- JS code for the nav icons -->
-    <script>
-      const body = document.querySelector(".body");
-      const navbar = document.querySelector(".navbar");
-      const menu = document.querySelector(".menu-list");
-      const menuBtn = document.querySelector(".menu-btn");
-      const cancelBtn= document.querySelector(".cancel-btn");
-      menuBtn.onclick = ()=>{
-        menu.classList.add("active");
-        menuBtn.classList.add("hide");
-        cancelBtn.classList.add("show");
-        body.classList.add("disabledScroll");
-      }
-      cancelBtn.onclick = ()=>{
-        menu.classList.remove("active");
-        menuBtn.classList.remove("hide");
-        cancelBtn.classList.remove("show");
-        body.classList.remove("disabledScroll");
-      }
-
-      windwo.onscroll = ()=>{
-        this.scrollY > 20 ? navbar.classlist.add("sticky"):navbar.classlist.remove("sticky"); 
-      }
-    </script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    <script>
-        $('.portfolio-item').isotope({
-            // options
-            itemSelector: '.item',
-            layoutMode: 'fitRows'
+        const menuBtn = document.querySelector(".menu-btn")
+        const navigation = document.querySelector(".navigation")
+        menuBtn.addEventListener("click", ()=>{
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
         });
-        $('.portfolio-menu ul li').click(function() {
-            $('.portfolio-menu ul li').removeClass('active');
-            $(this).addClass('active');
-
-            var selector = $(this).attr('data-filter');
-            $('.portfolio-items').isotope({
-                filter: selector
-            });
-            return false;
-        }); -->
-    </script>
+    </script>    
 </body>
 </html>
