@@ -414,7 +414,7 @@ section .events ul li .details a:hover{
     }
 }
 
-/*------------- For ipad 12pro ------------*/
+/*------------- For ipad pro ------------*/
 @media (min-width:1024px) and (max-width:1366px){
     section .leftBox .content h1{
         font-size: 3.5rem;
@@ -482,6 +482,7 @@ section .events ul li .details a:hover{
     /* background: #fff; */
     background: rgba(255,255,255);
     backdrop-filter: blur(50px);
+    font-size: 1.2rem;
     width: 600px;
     max-width: 600px;
     margin: 20px;
