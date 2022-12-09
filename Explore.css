@@ -10,10 +10,13 @@
 html{
     font-size: 62.5%;
 }
+body{
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%); 
+}
 .grand_parent{ 
     width: 100vw; 
-    height:100%;
-    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%); 
+    height:200vh;
+    /* background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);  */
     color: rgb(21, 6, 1);
 }
 h1{
@@ -86,6 +89,12 @@ p{
     transition: 0.5s linear;
 }
 @media (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    h1{
+        font-size: 3.5rem;
+    }
     .grand_parent{
         height:auto;
         font-size: 0.5rem; 
