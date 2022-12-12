@@ -14,7 +14,8 @@ html{
 .grand_parent{ 
     width: 100vw; 
     height:100%;
-    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%); 
+    /* background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);  */
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
     color: rgb(21, 6, 1);
 }
 h1{
@@ -30,7 +31,7 @@ p{
 }
 .parents{
     font-size: 1.5rem; 
-    width: 70vw; 
+    width: 80vw; 
     height: auto; 
     margin: auto;
     display: flex;  
@@ -42,6 +43,7 @@ p{
     font-size: 1.5rem;
     font-weight: bolder;
     height: 70px;
+    width: 160%;
     border: 2px solid rgb(21, 6, 1);
     /* background: rgba(0,0,0,0.3); */
     /* backdrop-filter: blur(10px); */
@@ -58,6 +60,7 @@ p{
     color: rgb(255, 255, 255);
     transition: 0.4s ease;
 }
+
 .child2{
     font-size: 1.5rem;
     height: 50px;
@@ -71,20 +74,22 @@ p{
     padding: 15px;
     margin: 10px;
 }
-.child2 a{
+.child2 .btn{
     text-decoration: none;
     font-weight: 500;
-    color: rgb(198, 228, 255);
-    background-image: linear-gradient(to right, #330867 0%,#30cfd0 100%);
-    /* border: 2px solid black; */
+    color: rgb(255, 255, 255);
+    /* background-image: linear-gradient(to right, #330867 0%,#30cfd0 100%); */
+    background: #330867;
+    border: none;
     padding: 10px;
     border-radius: 10px;
-    transition: 0.5s linear;
+    box-shadow: 2px 2px 5px grey;
 }
-.child2 a:hover{
-    color: rgb(198, 228, 255);
-    background-image: linear-gradient(to left, #330867 0%,#30cfd0 100%);
-    transition: 0.5s linear;
+.child2 .btn:active{
+    color: rgb(255, 255, 255);
+    /* background-image: linear-gradient(to left, #843bde 0%,#9ee9e9 100%); */
+    background: #6829b5;
+    box-shadow: none;
 }
 @media (max-width: 768px){
     /* body{

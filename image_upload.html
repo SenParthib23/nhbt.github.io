@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image upload</title>
+  <link rel="stylesheet" href="image_upload.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <header>Image Upload Page</header>
+    <form action="#">
+      <input class="file-input" type="file" name="file" hidden multiple>
+      <i class="fas fa-cloud-upload-alt"></i>
+      <p>Browse File to Upload</p><p style="text-align: center;">Image size should be 370 x 370 pixels. jpg, jpeg and png are allowed.</p>
+    </form>
+    <div class="date">
+      <input type="text" inputmode="numeric" placeholder="YYYY">
+      <button class="btn">Submit</button>
+    </div>
+    <section class="progress-area"></section>
+    <section class="uploaded-area"></section>
+  </div>
+  <script src="upload.js"></script>
+</body>
+</html>

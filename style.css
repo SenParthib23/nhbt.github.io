@@ -341,11 +341,18 @@ section .section2{
 .section-container .columns.contents .content-container{
     padding: 40px 50px;
 }
+.section-container .columns.contents .card2{
+  margin-left: -48px;
+}
+.section-container .columns.contents .card1{
+  margin-right: -48px;
+}
 .section-container .columns.contents .content-container h2{
     font-weight: 700;
     font-size: 35px;
     margin-bottom: 25px;
     color: rgb(227, 219, 208);
+    text-align: center;
 }
 .section-container .columns.contents .content-container p{
     font-weight: 400;
@@ -374,6 +381,12 @@ section .section2{
     }
     .section-container .columns.contents .content-container{
         padding: 20px 35px;
+    }
+    .section-container .columns.contents .card1{
+      margin: auto;
+    }
+    .section-container .columns.contents .card2{
+      margin: auto;
     }
     .section-container .columns.contents .content-container h2{
         margin-bottom: 5px;
