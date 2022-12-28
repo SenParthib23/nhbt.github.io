@@ -59,7 +59,7 @@ body{
   box-shadow: none;
   
 }
-.wrapper form{
+.wrapper form .upload{
   height: 167px;
   display: flex;
   cursor: pointer;

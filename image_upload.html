@@ -11,16 +11,15 @@
   <div class="wrapper">
     <header>Image Upload Page</header>
     <form action="#">
-      <input class="file-input" type="file" name="file" hidden multiple>
+      <div class="upload">
+        <input class="file-input" type="file" name="file" hidden multiple>
       <i class="fas fa-cloud-upload-alt"></i>
       <p>Browse File to Upload</p><p style="text-align: center;">Image size should be 370 x 370 pixels. jpg, jpeg and png are allowed.</p>
-    </form>
-    <div class="date">
-      <input type="text" inputmode="numeric" placeholder="YYYY">
-      <button class="btn">Submit</button>
-    </div>
-    <section class="progress-area"></section>
-    <section class="uploaded-area"></section>
+      </div>
+      <div class="date">
+        <input type="text" inputmode="numeric" placeholder="YYYY">
+        <button class="btn">Submit</button>
+      </div>
   </div>
   <script src="upload.js"></script>
 </body>

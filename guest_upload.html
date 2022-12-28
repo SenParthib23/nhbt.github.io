@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guest Upload</title>
+  <link rel="stylesheet" href="guest_upload.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <form action="#">
+      <div class="upload">
+        <header>Guest Image Upload</header>
+        <br>
+        <input class="file-input" type="file" name="file" hidden>
+        <i class="fas fa-cloud-upload-alt"></i>
+        <p>Browse File to Upload</p>
+      </div>
+      <div class="description1">
+        <input type="text" inputmode="text" placeholder="Guest Name">
+        <textarea name="pdf_description" placeholder= "Guest Description" id="" cols="52" rows="6"></textarea>
+        <!-- <input type="text" inputmode="text"> -->
+     </div>
+      <div class="description2">
+        <input type="email" inputmode="email" placeholder="Guest email">
+        <input type="text" inputmode="text" placeholder="Guest LinkedIn">
+        <!-- <input type="text" inputmode="text"> -->
+        <button class="btn">Submit</button>
+     </div>
+    </form>
+  </div>
+
+  <script src="upload.js"></script>
+
+</body>
+</html>
