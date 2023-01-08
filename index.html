@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nhbt4</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="headernav.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
   <body>
-
-    <header>
-      <!-- <a href="https://www.flaticon.com/free-icons/widget" title="widget icons">Widget icons created by exomoon design studio - Flaticon</a> -->
-      <!-- <a href="https://www.flaticon.com/free-icons/close" title="close icons">Close icons created by adrianadam - Flaticon</a> -->
-      <!-- <a href="https://www.flaticon.com/free-icons/menu" title="menu icons">Menu icons created by Freepik - Flaticon</a> -->
+    
+    
+    
+    
+    
+    
+    <!---------------------------------------- NAVBAR HTML CODE Starts --------------------------------------->
+    <!-- <header>
       <a href="#" class="brand">NHBT</a>
       <div class="menu-btn"></div>
       <div class="navigation">
@@ -24,8 +29,16 @@
           <a href="#footer">Contact</a>
         </div>
       </div>
-    </header>
+    </header> -->
+    <script src="script_nav_foot.js"></script>
+    <my-header></my-header>
+    <!---------------------------------------- NAVBAR HTML CODE Ends --------------------------------------->
 
+    
+    
+    
+    
+    
     <section class="home">
       <video class="video" src="img/bgVideo4.mp4" autoplay muted loop></video>
       <div class="content active">
@@ -40,10 +53,6 @@
         <a href="https://www.linkedin.com/in/parthib-sen-64416a224/"><i class="fab fa-linkedin-in"></i></a>
       </div>
     </section>
-    <!-- <section class="sec2">
-      <h2>About NHBT</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quia quis architecto aspernatur eius aperiam sequi hic totam ipsa quibusdam, excepturi repellendus, non velit, et optio! Qui ipsam sit quod similique vel sint, doloremque id delectus voluptates beatae culpa numquam, nisi asperiores rerum vitae suscipit tempore, corrupti nostrum illo architecto quos eaque. Cumque, nisi magnam. Amet, illum? Atque corporis repudiandae quibusdam ullam esse doloribus reiciendis optio labore assumenda aut beatae voluptatibus veritatis, corrupti aperiam error? Eius culpa perspiciatis quam nihil eos a, ut iusto facere ad, suscipit aut itaque dicta maxime pariatur ipsam odio assumenda eligendi? Commodi voluptatem voluptas eum?</p>
-    </section> -->
 
     <section class="section" id="section">
         <div class="leftBox">
@@ -131,33 +140,18 @@
             </div>
         </div>
     </section>
-
-    <!-- FOOTER Section -->
-    <!-- <footer class="footer">
-      <div class="footer_container">
-        <div class="footer_top">
-          <div class="company_info">
-            <h2 class="company_logo">NHBT</h2>
-            <p class="company_description">...</p>
-            <ul class="footer_list">
-              <li class="footer_list-item">
-                <a href="#" class="footer_list-link">
-                  <i class="ri-facebook-circle-line"></i>
-                </a>
-              </li>
-            </ul>
-            <span class="copyright">...</span>
-          </div>
-          <h6 class="footer_title">Microsoft Store</h6>
-          <ul class="footer_list">
-            <li class="footer_list-item">
-              <a href="" class="footer_list-link">...</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer> -->
-    <footer class="footer" id="footer">
+    
+    
+    
+    
+    
+    
+    
+    
+    <!---------------------------------------- FOOTER HTML CODE Starts --------------------------------------->
+    
+    
+<!-- <footer class="footer" id="footer" style="background: linear-gradient(to bottom, #330867 10%,#167070 90%);">
       <div class="footer-container">
         <div class="row">
           <div class="footer-col">
@@ -199,68 +193,39 @@
           </div>
         </div>
       </div>
-   </footer>
- 
+    </footer> -->
+    <my-footer></my-footer>
+
+    <!---------------------------------------- FOOTER HTML CODE Ends ----------------------------------------->
     
-
-    <script type="text/javascript">
-    //Javacript for responsive navigation menu
-    const menuBtn = document.querySelector(".menu-btn");
-    const navigation = document.querySelector(".navigation");
-
-    menuBtn.addEventListener("click", () => {
-      menuBtn.classList.toggle("active");
-      navigation.classList.toggle("active");
-    });
-
-    //Javacript for video slider navigation
-    const btns = document.querySelectorAll(".nav-btn");
-    const slides = document.querySelectorAll(".video-slide");
-    const contents = document.querySelectorAll(".content");
-
-
-    var sliderNav = function(manual){
-      btns.forEach((btn) => {
-        btn.classList.remove("active");
+    
+    
+    
+    <!-- <script type="text/javascript">
+      //----------------------Javascript for responsive navigation menu--------------------------------
+      const menuBtn = document.querySelector(".menu-btn");
+      const navigation = document.querySelector(".navigation");
+    
+      menuBtn.addEventListener("click", () => {
+        menuBtn.classList.toggle("active");
+        navigation.classList.toggle("active");
       });
-
-      slides.forEach((slide) => {
-        slide.classList.remove("active");
-      });
-
-      contents.forEach((content) => {
-        content.classList.remove("active");
-      });
-
-      btns[manual].classList.add("active");
-      slides[manual].classList.add("active");
-      contents[manual].classList.add("active");
-    }
-
-    btns.forEach((btn, i) => {
-      btn.addEventListener("click", () => {
-        sliderNav(i);
-      });
-    });
-    </script>
-    <script type="text/javascript">
-        window.onscroll = function() {myFunction()};
-
-        // Get the header
-        var header = document.getElementById("header");
-
-        // Get the offset position of the navbar
-        var sticky = header.offsetTop;
-
-        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-        function myFunction() {
-        if (window.pageYOffset > sticky) {
-            header.classList.add("sticky");
-        } else {
-            header.classList.remove("sticky");
-        }
-        }
-    </script>
-
+    </script> -->
+    <script src="resp_nav.js"></script>
+    
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <a href="https://www.flaticon.com/free-icons/widget" title="widget icons">Widget icons created by exomoon design studio - Flaticon</a> -->
+<!-- <a href="https://www.flaticon.com/free-icons/close" title="close icons">Close icons created by adrianadam - Flaticon</a> -->
+<!-- <a href="https://www.flaticon.com/free-icons/menu" title="menu icons">Menu icons created by Freepik - Flaticon</a> -->

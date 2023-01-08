@@ -16,7 +16,17 @@ body{
     background: linear-gradient(to top, #330867 100%,#30cfd0 0%);
 }
 
-header{
+
+
+
+
+
+
+
+
+/* ----------------------- CSS code for NAVIGATION BAR along with media querries starts --------------------- */
+
+/* header{
   z-index: 999;
   position: fixed;
   background: rgba(255,255,255,0.1);
@@ -70,6 +80,88 @@ header .navigation .navigation-items a:hover:before{
   width: 100%;
   color: cyan;
 }
+
+@media (max-width: 1040px){
+  body{
+    overflow-x: hidden;
+  }
+  header{
+    padding: 12px 20px;
+  }
+  header .navigation{
+    display: none;
+  }
+
+  header .navigation.active{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(1, 1, 1, 0.5);
+  }
+
+  header .navigation .navigation-items a{
+    color: #222;
+    font-size: 1.5rem;
+    margin: 20px;
+  }
+
+  header .navigation .navigation-items a:before{
+    background: #222;
+    height: 2px;
+  }
+
+  header .navigation.active .navigation-items{
+    background: rgba(255,255,255);
+    backdrop-filter: blur(50px);
+    font-size: 1.2rem;
+    width: 600px;
+    max-width: 600px;
+    margin: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+  }
+
+  .navigation-items.sticky{
+    background: #1b1b1b;
+    padding: 10px 0;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+  }
+  .menu-btn{
+    background: url(img/menu2.png)no-repeat;
+    background-size: 30px;
+    background-position: center;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .menu-btn.active{
+    z-index: 999;
+    background: url(img/cross.png)no-repeat;
+    background-size: 35px;
+    background-position: center;
+    transition: 0.3s ease;
+  }
+} */
+
+/* ---------------------- CSS code for NAVIGATION BAR along with media querries ends ---------------------- */
+
+
+
+
+
+
+
 
 section{
   padding: 100px 200px;
@@ -175,6 +267,23 @@ section{
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+/* ----------------Media query for making the landing page responsive------------------ */
+@media (max-width: 1040px){
+  section{
+    padding: 100px 20px;
+  }
+
+  .home .media-icons{
+    right: 15px;
+  }
+}
+
+@media (max-width: 560px){
+  .home .content h1{
+    font-size: 3.5rem;
+    line-height: 4.0rem;
+  }
 }
 
 
@@ -480,100 +589,16 @@ section .section2{
 
 
 
-/* ----------------Media query for making the landing page and navbar responsive------------------ */
-@media (max-width: 1040px){
-  body{
-    overflow-x: hidden;
-  }
-  header{
-    padding: 12px 20px;
-  }
 
-  section{
-    padding: 100px 20px;
-  }
 
-  .home .media-icons{
-    right: 15px;
-  }
 
-  header .navigation{
-    display: none;
-  }
 
-  header .navigation.active{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(1, 1, 1, 0.5);
-  }
 
-  header .navigation .navigation-items a{
-    color: #222;
-    font-size: 1.5rem;
-    margin: 20px;
-  }
 
-  header .navigation .navigation-items a:before{
-    background: #222;
-    height: 2px;
-  }
 
-  header .navigation.active .navigation-items{
-    /* background: #fff; */
-    background: rgba(255,255,255);
-    backdrop-filter: blur(50px);
-    font-size: 1.2rem;
-    width: 600px;
-    max-width: 600px;
-    margin: 20px;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 5px;
-    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
-  }
+/* -------------------------- FOOTER CSS code with media querries starts -------------------------------------*/
 
-  .navigation-items.sticky{
-    background: #1b1b1b;
-    padding: 10px 0;
-    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
-  }
-  .menu-btn{
-    background: url(menu2.png)no-repeat;
-    background-size: 30px;
-    background-position: center;
-    width: 45px;
-    height: 45px;
-    cursor: pointer;
-    transition: 0.3s ease;
-  }
-
-  .menu-btn.active{
-    z-index: 999;
-    background: url(cross.png)no-repeat;
-    background-size: 35px;
-    background-position: center;
-    transition: 0.3s ease;
-  }
-}
-
-@media (max-width: 560px){
-  .home .content h1{
-    font-size: 3.5rem;
-    line-height: 4.0rem;
-  }
-}
-
-/* Footer with media querries */
-
-.footer-container{
+/* .footer-container{
 	max-width: 1170px;
 	margin:auto;
 }
@@ -644,7 +669,6 @@ ul{
 	background-color: #ffffff;
 }
 
-/*responsive*/
 @media(max-width: 767px){
   .footer-col{
     width: 50%;
@@ -654,5 +678,7 @@ ul{
 @media(max-width: 574px){
   .footer-col{
     width: 100%;
-}
-}
+  }
+} */
+
+/* -------------------------- FOOTER CSS code with media querries ends -------------------------------------*/
